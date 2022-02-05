@@ -38,7 +38,7 @@ const CurrencyConverter = () => {
 
     return ( 
         <div className="currency-converter">
-            <h2>CurrencyConverter</h2>
+            <h2 className="conveter-header">Currency Converter</h2>
             <div className="input-box">
                 <table>
                         <tbody>
@@ -88,7 +88,10 @@ const CurrencyConverter = () => {
                             </tr>
                         </tbody>
                     </table>
+                    <div className="convert-wrapper">
                     <button id='convert-button' onClick={convert}>Convert</button>
+                    </div>
+                    
             </div>
             <ExchangeRate
                 exchangeRate={exchangeRate}

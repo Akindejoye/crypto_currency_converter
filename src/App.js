@@ -5,9 +5,11 @@ const App = () => {
 
   return (
     <div className='app'>
-      <h1>Crypto Dashboard</h1>
-      <CurrencyConverter />
-      <NewsFeed />
+      <h1 className='header'>Crypto Dashboard</h1>
+      <div className='home'>
+        <CurrencyConverter />
+        <NewsFeed />
+      </div>
     </div>
   );
 }

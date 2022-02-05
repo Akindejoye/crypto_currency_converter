@@ -27,10 +27,10 @@ const NewsFeed = () => {
     
     return ( 
         <div className="news-feed">
-            <h2>NewsFeed</h2>
+            <h2 className="header-news">NewsFeed</h2>
             {first7Articles?.map((article, index) => (
-                <div key={index}>
-                    <a href={article.url}><h1>{article.title}</h1></a>
+                <div key={index} className='news-text-wrapper'>
+                    <a target='_blank' href={article.url} rel="noreferrer"><h2 className="news-text">{article.title}</h2></a>
                 </div>
             ))}
         </div>
